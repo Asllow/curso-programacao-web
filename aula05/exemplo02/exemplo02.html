@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo básico do que o Javascript pode fazer</title>
+</head>
+<body>
+    <button onclick="criarParagrafo()">Me clique!</button>
+<script>
+    function criarParagrafo() {
+        let para = document.createElement("p");
+        para.textContent = "Você clicou o botão!";
+        document.body.appendChild(para);
+    }
+</script>
+</body>
+</html>
